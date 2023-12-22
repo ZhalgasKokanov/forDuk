@@ -6,13 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yayyyyee!!!!</title>
     <link rel="stylesheet" href="styleyes.css">
+
+
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://ik.imagekit.io/urvish/Urvish's%20Logo_yGTYkPWgU?updatedAt=1697289324289">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://ik.imagekit.io/urvish/Urvish's%20Logo_yGTYkPWgU?updatedAt=1697289324289">
+
+    <!-- Primary Meta Tags -->
+    <title>Ask your crush for a date</title>
+    <meta name="title" content="Ask your crush for a date" />
+    <meta name="description"
+        content="Ask your crush for a date with this simple website. Defiantly she will not reject you" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://crush-date.vercel.app/" />
+    <meta property="og:title" content="Ask your crush for a date" />
+    <meta property="og:description"
+        content="Ask your crush for a date with this simple website. Defiantly she will not reject you" />
+    <meta property="og:image" content="https://ik.imagekit.io/urvish/Urvish.svg?updatedAt=1693120807755" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://crush-date.vercel.app/" />
+    <meta property="twitter:title" content="Ask your crush for a date" />
+    <meta property="twitter:description"
+        content="Ask your crush for a date with this simple website. Defiantly she will not reject you" />
+    <meta property="twitter:image" content="https://ik.imagekit.io/urvish/Urvish.svg?updatedAt=1693120807755" />
 </head>
 
-<body>
+<body onload="displayUserName()">
     <div class="container">
-        <div>
-            <h1 class="ask"> YAYYYEEEEE!!!!!!!!!!!</h1>
-        </div>
+
+        <h1 id="userNameDisplay" class="name_display"></h1>
+
         <div class="gifcontainer">
             <img src="https://media1.giphy.com/media/HkoyzeNqvWK81aqZ6S/200w.webp?cid=ecf05e47h4v6piy51jch99dx33toeq1ubeieswswqk5cg3ap&ep=v1_gifs_related&rid=200w.webp&ct=g"
                 alt="yeyeeee!!">
@@ -23,6 +51,21 @@
                 style="font-weight: bolder; color: red;">
                 &#9829;</span></a>
     </div>
+    <script>
+        // Function to display the user's name on the second page
+        function displayUserName() {
+            // Retrieve the user's name from localStorage
+            var userName = localStorage.getItem('userName');
+
+            // Display the user's name in the h1 tag
+            if (userName) {
+                document.getElementById('userNameDisplay').innerText = "YAYYYEEEEE!!!!!!!!!!! Let's go , " + userName + "!";
+            } else {
+                // Handle the case where the user's name is not available
+                document.getElementById('userNameDisplay').innerText = "YAYYYEEEEE!!!!!!!!!!! ";
+            }
+        }
+    </script>
 </body>
 
 </html>
