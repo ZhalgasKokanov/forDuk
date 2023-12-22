@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
 body {
@@ -18,9 +19,9 @@ body {
 
 #noButton {
     position: absolute;
-    left: 50%;
+    left: 60%;
     /* Center horizontally */
-    top: 50%;
+    top: 80%;
     /* Center vertically */
     transform: translate(-50%, -50%);
     /* Center the button precisely */
@@ -29,16 +30,15 @@ body {
 
 #yesButton {
     position: absolute;
-    right: 50%;
+    right: 60%;
     /* Center horizontally */
-    top: 50%;
+    top: 80%;
     /* Center vertically */
     transform: translate(50%, -50%);
     /* Center the button precisely */
 }
 
 .ask {
-    font-family: 'nunito';
     font-size: 40px;
     font-weight: bold;
     color: white;
@@ -65,19 +65,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+}
+
+.gifcontainer>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #urvishPatel {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    font-family: 'Poppins';
     font-size: 16px;
-    /* font-weight: bolder; */
     color: white;
 }
 
-.urvishPatel>span {
+.urvishPatel>a {
+    text-decoration: none;
+}
+
+.urvishPatel>a>span {
     font-weight: bolder;
 }

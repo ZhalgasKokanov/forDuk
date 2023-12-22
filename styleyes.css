@@ -1,14 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
-body{
+
+body {
     background-color: rgb(5, 184, 190);
 }
 
-.ask{
-    font-family: 'nunito';
+.ask {
     font-size: 40px;
     font-weight: bold;
     color: white;
@@ -17,7 +18,7 @@ body{
     margin-left: 20px;
 }
 
-.gifcontainer{
+.gifcontainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,3 +26,19 @@ body{
 }
 
 
+
+#urvishPatel {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.urvishPatel>a {
+    text-decoration: none;
+}
+
+.urvishPatel>a>span {
+    font-weight: bolder;
+}
