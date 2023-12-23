@@ -3,16 +3,10 @@ function nextPage() {
 }
 
 function moveButton() {
-    var button = document.getElementById('noButton');
-    var x = Math.random() * (window.innerWidth - button.offsetWidth);
-    var y = Math.random() * (window.innerHeight - button.offsetHeight);
-
-    // Ensure the button stays within the viewport boundaries
-    x = Math.max(0, Math.min(x, window.innerWidth - button.offsetWidth));
-    y = Math.max(0, Math.min(y, window.innerHeight - button.offsetHeight));
-
-    button.style.left = `${x}px`;
-    button.style.top = `${y}px`;
+    var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+    var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+    document.getElementById('noButton').style.left = `${x}px`;
+    document.getElementById('noButton').style.top = `${y}px`;
 }
 
 console.log("Made with love by - Urvish Patel ❣️");

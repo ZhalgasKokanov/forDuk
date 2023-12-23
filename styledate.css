@@ -10,32 +10,24 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Change to 100vh to cover the full viewport height */
     background-color: #f3aac8;
     width: 100vw;
     overflow: hidden;
-    /* Prevent horizontal scrollbar due to margin */
 }
 
 #noButton {
     position: absolute;
     left: 60%;
-    /* Center horizontally */
     top: 80%;
-    /* Center vertically */
     transform: translate(-50%, -50%);
-    /* Center the button precisely */
     transition: 0.5s;
 }
 
 #yesButton {
     position: absolute;
     right: 60%;
-    /* Center horizontally */
     top: 80%;
-    /* Center vertically */
     transform: translate(50%, -50%);
-    /* Center the button precisely */
 }
 
 .ask {
@@ -61,16 +53,12 @@ body {
     font-size: 16px;
 }
 
-.gifcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.gifcontainer>img {
+.gif_container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 90px;
 }
 
 #urvishPatel {
