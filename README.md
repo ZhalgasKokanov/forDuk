@@ -1,5 +1,5 @@
 "# crush_date" 
-# Idea from Rendom instagram reel 😆
+# Created specially for hallucinatin' 😆
 ## watch live from PC/Laptop here
 [Click here to see live on VERCEL](https://crush-date.vercel.app/)
 
